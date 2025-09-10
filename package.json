@@ -11,7 +11,8 @@
 		"lint": "biome lint .",
 		"actionlint": "actionlint .github/**/*.yml",
 		"preview": "vite preview",
-		"bp": "tsc && vite build && vite preview"
+		"bp": "tsc && vite build && vite preview",
+		"pinact": "pinact run"
 	},
 	"dependencies": {
 		"react": "~19.1.1",
