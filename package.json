@@ -6,7 +6,7 @@
 	"scripts": {
 		"dev": "vite",
 		"build": "tsc && vite build",
-		"format": "biome format --write . && dprint fmt  && textlint --fix \"**/*.md\"",
+		"format": "biome format --config-path=\"$HOME/biome.json\" --write . && dprint fmt  && textlint --fix \"**/*.md\"",
 		"check": "biome check --write . && dprint check",
 		"lint": "biome lint .",
 		"actionlint": "actionlint .github/**/*.yml",
