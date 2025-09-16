@@ -75,6 +75,8 @@ echo "設定が完了しました。"
 
 ### Enterprise の場合の追加設定
 
+(この項目たぶん不要。未テストだけど)
+
 GitHub Pages は free のレポジトリと Enterprise で違う構造の URL に発行される。
 
 実際に試したところ
