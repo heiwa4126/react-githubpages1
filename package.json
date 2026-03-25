@@ -4,12 +4,13 @@
 	"version": "1.0.21",
 	"type": "module",
 	"scripts": {
+		"preinstall": "pnpm audit",
 		"dev": "vite",
 		"build": "tsc && vite build",
-		"actionlint": "actionlint .github/**/*.yml",
 		"preview": "vite preview",
 		"bp": "tsc && vite build && vite preview",
 		"pinact": "pinact run",
+		"actionlint": "actionlint && zizmor .",
 		"format": "oxfmt",
 		"lint": "oxlint",
 		"check": "oxfmt && oxlint --fix"
