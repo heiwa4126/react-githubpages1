@@ -45,8 +45,6 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
 
     runs-on: ubuntu-latest
-    env:
-      GITHUB_REPO_NAME: ${{ github.event.repository.name }}
 
     steps:
       - name: Checkout
@@ -71,6 +69,8 @@ jobs:
 
       - name: Build
         run: pnpm run build
+        env:
+          GITHUB_REPO_NAME: "/${{ github.event.repository.name }}"
 
       - name: Setup Pages
         uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5.0.0

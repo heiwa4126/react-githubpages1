@@ -4,7 +4,7 @@ import { defineConfig } from "vite";
 
 // https://vite.dev/config/
 export default defineConfig({
-	base: process.env.GITHUB_REPO_NAME ?? "./",
+	base: process.env.GITHUB_REPO_NAME ?? "/",
 	plugins: [react(), minifyHtml()],
 	build: {
 		minify: true,
